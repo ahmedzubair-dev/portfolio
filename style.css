@@ -24,7 +24,7 @@
   #cursor-blur {
     height: 500px;
     width: 500px;
-    background-color: rgba(150, 193, 30, 0.3);
+    background-color: rgba(15, 238, 238, 0.3);
     border-radius: 50%;
     position: fixed;
     filter: blur(80px);
@@ -374,9 +374,9 @@
     scale: 1;
   }
   #page4 h1 {
-    font-size: 6.4vw;
+    font-size: 3.0vw;
     position: absolute;
-    top: -15%;
+    top: -30%;
     font-weight: 900;
     font-family: gilroy;
     color: #000;
@@ -400,7 +400,7 @@
     z-index: 0;
   }
   #f1 img {
-    height: 100px;
+    height: 250px;
   }
   #f1,
   #f2,
