@@ -1,3 +1,32 @@
+// old loader JS
+$(window).on('load', function () {
+  var counter = 0; // Start from 0
+  var interval = 30; // Interval between counts (in milliseconds)
+
+  // Update the counter and progress bar
+  var intervalId = setInterval(function () {
+    counter++;
+    $('#count').text(counter);
+    $('#progress-bar').css('width', counter + '%');
+
+    if (counter >= 100) {
+      clearInterval(intervalId); // Stop counting at 100
+
+      // Add pop-down animation to the count
+      $('#count').addClass('pop-down');
+
+      // Fade out the loader and fade in the content after animation
+      setTimeout(function () {
+        $('#loader').fadeOut('slow', function () {
+          $('#load').fadeIn('slow');
+        });
+      }, 1000); // Wait for the pop-down animation to complete
+    }
+  }, interval);
+});
+
+
+
 var crsr = document.querySelector("#cursor");
 var blur = document.querySelector("#cursor-blur");
 

@@ -32,6 +32,74 @@
     transition: all linear 0.4s;
   }
 
+  /* old loader css */
+  #load {
+    display:none;
+   
+    }
+    
+    #loader{
+      font-size: 40px;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      color: #000;
+      background-color: #17d599;
+    }
+    #count {
+      font-size: 100px;
+      font-weight: bold;
+      color: #000;
+      position: absolute;
+      top: 40%;
+      text-align: center;
+      
+    }
+
+    #progress-bar {
+      width: 0%;
+      height: 5px;
+      background-color: #000;
+      position: absolute;
+      bottom: 40%;
+      left: 0;
+    }
+
+    
+    .pop-down {
+      animation: popDown 1s forwards;
+    }
+    
+
+    @keyframes popDown {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+    }
+
+    @keyframes popIn {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* Basic reset */
+
+
+
+    
   #nav{
     height:150px;
     width: 100%;
@@ -39,7 +107,7 @@
     align-items: center;
     padding: 0 120px;
     gap: 50px;
-    position: fixed;
+    position:fixed;
     justify-content: flex-start;
     z-index: 999;
   }
@@ -52,6 +120,9 @@
     font-weight: 500;
     cursor: pointer;
     font-size: 1.15vw;
+  }
+  #nav h4 a{
+    text-decoration: none;
   }
 
   /* Container for the video */
@@ -72,7 +143,7 @@
   object-fit: cover; /* Ensures the video covers the entire container */
 }
 
-  video {
+  .video {
     position: fixed;
     top: 0;
     left: 0;
@@ -101,7 +172,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    padding: 50px 20px;
+    padding: 50px 0px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url('video/vid.mp4') center/cover;
     color: #fff;
     z-index: 10;
@@ -136,6 +207,7 @@
   }
 
   #page2 {
+    padding-top: 110px;
     min-height: 100vh;
     width: 100%;
     z-index: 10;
@@ -186,7 +258,7 @@
   }
   
   #about-us{
-    height: 40vh;
+    height: 70vh;
     width: 100%;
     /* background-color: red; */
     display: flex;
@@ -197,29 +269,53 @@
   }
 
   #about-us img{
-    height: 220px;
-    width: 220px;
+    height: 300px;
+    width: 300px;
     border-radius: 20px;
     object-fit: cover;
   }
 
   #about-us-in{
+    height: 100%;
     width: 40%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    /* text-align: center; */
+    align-items: center;
+    flex-direction: column;
+
   }
 
   #about-us-in h3{
     font-size: 54px;
     font-weight: 800;
-    margin-bottom: 30px;
+    padding-bottom: 65px;
+    display: block;
   }
   #about-us-in p{
     font-size: 20px;
-    line-height: 26px;
+    padding-bottom: 30px;
+    line-height: 36px;
+  }
+
+  #projects {
+    padding-top: 140px;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #projects h3{
+    font-size: 40px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #cards-container {
     /* background-color: red; */
+    margin-top: 60px;
     height: 60vh;
     display: flex;
     align-items: center;

@@ -7,13 +7,26 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+<!-- old loader  -->
+  <div id="loader">
+    <div id="count">0</div>
+    <div id="progress-bar"></div> 
+    
+  </div>
+  <div id="load">
+    
     <div id="nav">
-        <img src="images/logo.png" alt="">
-        <h4>About Me</h4>
-        <h4>Projects</h4>
+        
+        <a href="#main">
+          <img src="images/logo.png" alt="">
+        </a>
+        <h4><a href="#page2">About Me</a></h4>
+        <h4><a href="#projects">Projects</a></h4>
+        
         <h4>Skills</h4>
         <h4>Blog</h4>
-        <h4>Contact</h4>
+        <h4><a href="#footer">Contact us</a></h4>
     </div>
     <div id="cursor"></div>
     <div id="cursor-blur"></div>
@@ -96,7 +109,25 @@
             <img src="https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?ga=GA1.1.2097725186.1727254336&semt=ais_hybrid" alt="" >
         </div>
 
-        <div id="cards-container">
+      
+
+        <!-- <div id="green-div">
+          <img
+            src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg"
+            alt=""
+          />
+          <h4>
+            SIGN UP FOR SIDCUP NEWS AND SPECIAL OFFERS STRAIGHT TO YOUR INBOX
+          </h4>
+          <img
+            src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg"
+            alt="" />
+        </div>  -->
+        </div>
+
+        <div id="projects">
+          <h3>PROJECTS</h3>
+          <div id="cards-container">
             <div class="card" id="card1">
               <div class="overlay">
                 <h4>AI & ML</h4>
@@ -128,20 +159,8 @@
               </div>
             </div>
           </div>
-
-        <div id="green-div">
-          <img
-            src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg"
-            alt=""
-          />
-          <h4>
-            SIGN UP FOR SIDCUP NEWS AND SPECIAL OFFERS STRAIGHT TO YOUR INBOX
-          </h4>
-          <img
-            src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg"
-            alt="" />
-        </div> 
         </div>
+
 
         <div id="page3">
             <p>
@@ -218,9 +237,13 @@
         </div>
     
 
-
+      </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="script.js"></script>
 </body>
