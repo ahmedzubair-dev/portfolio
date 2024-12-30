@@ -547,7 +547,7 @@ body {
   }
 
   /* Responsive Styles for Mobile (320px to 640px) */
-@media (max-width: 400px) {
+@media (max-width: 640px) {
 
   #nav{
     display: none;
