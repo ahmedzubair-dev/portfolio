@@ -149,9 +149,18 @@ body {
       font-weight: bold;
       color: #000;
       position: absolute;
-      top: 40%;
+      top: 35%;
       text-align: center;
       
+    }
+    #percent {
+      font-size: 100px;
+      font-weight: bold;
+      color: #000;
+      margin-left: 85%; 
+      position: absolute;
+      top: 35%;
+      text-align: right;
     }
 
     #progress-bar {
@@ -159,7 +168,7 @@ body {
       height: 5px;
       background-color: #000;
       position: absolute;
-      bottom: 40%;
+      bottom: 50%;
       left: 0;
     }
 
@@ -191,6 +200,23 @@ body {
       }
     }
 
+    #timer {
+      position: absolute;
+      top: 50px;
+      right: 80px;
+      font-size: 0.5em;
+      font-weight: 500;
+      color: #000;
+      /* font-family: Arial, sans-serif; */
+    }
+    #position{
+      color: #000;
+      position: absolute;
+      top: 50px;
+      left: 80px;
+      font-size: 0.5em;
+      font-weight: 500;
+    }
     /* Basic reset */
 
 

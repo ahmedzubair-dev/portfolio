@@ -25,6 +25,27 @@ $(window).on('load', function () {
   }, interval);
 });
 
+function updateTime() {
+  // Get the current time in Hyderabad (Indian Standard Time)
+  const options = { 
+    timeZone: "Asia/Kolkata", 
+    hour12: true, 
+    hour: '2-digit', 
+    minute: '2-digit', 
+    second: '2-digit' 
+  };
+  const time = new Date().toLocaleString('en-IN', options);
+
+  // Display the time in the timer div
+  document.getElementById('timer').textContent = time;
+}
+
+// Update the time every second
+setInterval(updateTime, 1000);
+
+// Initial time display when the page loads
+updateTime();
+
 
 
 var crsr = document.querySelector("#cursor");
