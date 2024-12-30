@@ -125,3 +125,18 @@ gsap.to("#nav", {
       scrub: 3,
     },
   });
+
+          var typed = new Typed(".auto-type", {
+            strings: ["Thinking", "Designing", "Developing", "Updating"],
+            typeSpeed: 100,
+            backSpeed: 150,
+            loop: true
+        });
+
+        //   var typed = new Typed(".auto-type2", {
+        //     strings: ["Code. Create. Innovate."],
+        //     typeSpeed: 100,
+        //     backSpeed: 150,
+        //     loop: true
+        // });
+  
