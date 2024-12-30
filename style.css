@@ -1,3 +1,6 @@
+@import "node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+
 * {
     margin: 0;
     padding: 0;
@@ -218,6 +221,28 @@ body {
   #nav h4 a{
     text-decoration: none;
   }
+
+  /* #nav a:hover {
+    color: #f39c12; 
+    transform: translateY(-0px); 
+    border-bottom: #e1e4e1;
+    border-left: #ce0e00;
+    border:sizing 10px;
+  } */
+
+  #nav a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background: rgb(7, 14, 243);
+    transition: 0.5s;
+}
+
+  #nav a:hover::after {
+    width: 100%;
+}
 
   /* .video {
     position: fixed;
@@ -471,6 +496,33 @@ body {
   #intro h1 h2 p{
     padding-left: 40px;
     text-align: left;
+  }
+
+  .social-links {
+    margin-top: 25px;
+    
+  }
+  
+  .social-links a {
+    font-size: 24px;
+    display: inline-block;
+    color: color-mix(in srgb, var(--default-color), transparent 50%);
+    line-height: 1;
+    margin-right: 20px;
+    transition: 0.3s;
+  }
+  .social-links a:hover {
+    color: var(--accent-color);
+  }
+  
+  .bi-instagram {
+    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+    -webkit-background-clip: text;
+    color: transparent;
+    /* font-size: 2rem; */
+  }
+  .bi-linkedin{
+    color: #0A66C2;
   }
   
   .parent-cube{
