@@ -989,7 +989,8 @@ body {
 }
 
   .menu-button{
-    margin-left: 200px;
+    /* margin-left: 150px; */
+    padding-left: 60vw;
   }
 
   .sidebar{
