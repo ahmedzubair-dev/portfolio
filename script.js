@@ -85,6 +85,17 @@ gsap.to("#nav", {
         scrub: 2,
     }
   })
+  gsap.to("body", {
+    backgroundColor: "black",
+    duration: 1,
+    scrollTrigger: {
+      trigger: "#page2",
+      start: "top center",
+      end: "bottom center",
+      toggleActions: "play reverse play reverse",
+      scrub: true,
+    },
+  });
 
   gsap.from("#about-us img,#about-us-in", {
     y: 90,
