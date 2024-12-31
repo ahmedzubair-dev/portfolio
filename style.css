@@ -1198,6 +1198,24 @@ body {
   line-height: 27px;
   text-align: center;
 }
+.overlay{
+  padding-top: 5px;
+}
+.overlay h4{
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  position: relative;
+  margin-bottom: 5px;
+}
+.overlay p{
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  padding-bottom: 1px;
+  line-height: 11.5px;
+  font-size: 9px;
+}
+
 #page4{
   gap: 39px;
   padding: 7px;
