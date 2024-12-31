@@ -61,7 +61,7 @@ document.addEventListener("mousemove", function (dets) {
 gsap.to("#nav", {
     backgroundColor: "#000",
     duration: 0.5,
-    height: "110px",
+    height: "75px",
     scrollTrigger: {
       trigger: "#nav",
       scroller: "body",
@@ -170,3 +170,6 @@ gsap.to("#nav", {
         //     loop: true
         // });
   
+
+  // Wait for the DOM to fully load
+
