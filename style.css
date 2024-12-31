@@ -1186,6 +1186,17 @@ body {
   text-align: center;
 }
 
+#page4 h1 {
+  font-size: 19px;
+  position: absolute;
+  top: -42%;
+  padding-left: 19px;
+  font-weight: 300;
+  font-family: 'montserrat';
+  color: #000;
+  -webkit-text-stroke: 2px #fff;
+}
+
 }
 
 @media (max-width: 800px) and (min-width: 641px) {
