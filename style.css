@@ -95,7 +95,7 @@ body {
 
     
     .pop-down {
-      animation: popDown 1s forwards;
+      animation: popDown 2s forwards;
     }
     
 
@@ -1185,6 +1185,10 @@ body {
   line-height: 27px;
   text-align: center;
 }
+#page4{
+  gap: 39px;
+  padding: 7px;
+}
 
 #page4 h1 {
   font-size: 19px;
@@ -1197,6 +1201,26 @@ body {
   -webkit-text-stroke: 2px #fff;
 }
 
+#position{
+  top: 30px;
+  left: 10px;
+}
+
+#timer{
+  top:30px;
+  right: 10px;
+}
+#footer{
+ height: 16vh;
+ justify-content: center;
+}
+#f1 img{
+  height: 100px;
+}
+#f4 h4{
+  margin-bottom: 0px;
+  line-height: 12px;
+}
 }
 
 @media (max-width: 800px) and (min-width: 641px) {

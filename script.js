@@ -14,6 +14,9 @@ $(window).on('load', function () {
 
       // Add pop-down animation to the count
       $('#count').addClass('pop-down');
+      $('#percent').addClass('pop-down');
+      $('#position').addClass('pop-down');
+      $('#timer').addClass('pop-down');
 
       // Fade out the loader and fade in the content after animation
       setTimeout(function () {
