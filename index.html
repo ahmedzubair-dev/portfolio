@@ -20,17 +20,31 @@
     <div id="timer"></div> <!-- Added timer div -->
 </div>
   </div>
+
+  <!-- 320px to 640px mobile resol -->
+     <!--  768px to 800px for tablet -->   
   <div id="load">
     
-    <!-- 320px to 640px mobile resol -->
-     <!--  768px to 800px for tablet -->      
+       
     <div id="nav">
+      <div class="sidebar">
+        <h4 onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></h4>
+        <h4><a href="#">About Me</a></h4>
+        <h4><a href="#">Projects</a></h4>
+        <h4><a href="#">Skilss</a></h4>
+        <h4><a href="#">Blog</a></h4>
+        <h4><a href="#">Contact us</a></h4>
+        
+      </div>
+
         <a href="#main"><img src="images/logo.png" alt=""></a>
-        <h4><a href="#page2">About Me</a></h4>
-        <h4><a href="#projects">Projects</a></h4>
-        <h4>Skills</h4>
-        <h4>Blog</h4>
-        <h4><a href="#footer">Contact us</a></h4>
+        <h4 class="hideOnMobile"><a href="#page2">About Me</a></h4>
+        <h4 class="hideOnMobile"><a href="#projects">Projects</a></h4>
+        <h4 class="hideOnMobile">Skills</h4>
+        <h4 class="hideOnMobile">Blog</h4>
+        <h4 class="hideOnMobile"><a href="#footer">Contact us</a></h4>
+        <h4 class="menu-button"onclick=showSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" fill="white"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></h4>
+
     </div>
 
     <div id="cursor"></div>
@@ -146,17 +160,16 @@
                 </div>
         </div>
         <div id="about-us">
-            <img src="https://media.istockphoto.com/id/1494104649/photo/ai-chatbot-artificial-intelligence-digital-concept.jpg?s=612x612&w=0&k=20&c=1Zq2sj3W0tWcpc-n1fVt4dQQOBGhtwcAk1H2eQ5MAbI=" alt="" >
+          <img src="images/about me.jpeg" alt="" >
+          
         <div id="about-us-in">
             <h3>About Me</h3>
-            <p>I am a dedicated professional, I have developed an AI-powered chatbot integrated with a CRM system to automate customer interactions, enhancing engagement and operational efficiency. Additionally, completed an MS CRM course, gaining comprehensive knowledge in customer relationship management and its practical applications.</p>
-        </div>   
-            <img src="https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?ga=GA1.1.2097725186.1727254336&semt=ais_hybrid" alt="" >
+            <p>I have hands-on experience in Microsoft Dynamics CRM and front-end web development, delivering effective solutions for businesses.</p>
+            <p>Skilled in AI and Python, I build intelligent systems and enhance automation.</p>
+            <p>Driven by a passion for technology, I am dedicated to continuous learning and creating innovative solutions.</p>
+
+          </div>       
         </div>
-
-      
-      
-
         <!-- <div id="green-div">
           <img
             src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg"
@@ -176,12 +189,13 @@
           <div id="cards-container">
             <div class="card" id="card1">
               <div class="overlay">
-                <h4>AI & ML</h4>
+                <h4>AI-Powered Chatbot: "Jarvis"</h4>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
-                  quam molestias magni cupiditate architecto et enim quas facere
-                  ipsum tempora?
-                </p>
+                  Developed an intelligent chatbot named "Jarvis" integrated with a CRM system to streamline customer interactions.
+                  </p>
+                <p>
+                  Leveraged Natural Language Processing (NLP) techniques to enable "Jarvis" to understand and respond to customer queries effectively.
+                  </p>
               </div>
             </div>
             <div class="card" id="card2">

@@ -148,11 +148,20 @@ gsap.to("#nav", {
   });
 
           var typed = new Typed(".auto-type", {
-            strings: ["Thinking", "Designing", "Developing", "Updating"],
+            strings: ["Web Developer", "The OG!", "Microsoft Dynamics Developer"],
             typeSpeed: 100,
             backSpeed: 150,
             loop: true
         });
+
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
 
         //   var typed = new Typed(".auto-type2", {
         //     strings: ["Code. Create. Innovate."],
