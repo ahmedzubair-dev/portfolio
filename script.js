@@ -176,3 +176,16 @@ function hideSidebar() {
   const sidebar = document.querySelector('.sidebar')
   sidebar.style.display = 'none'
 }
+
+const parentCube = document.querySelector('.parent-cube');
+
+document.addEventListener('DOMContentLoaded', () => {
+  const parentCube = document.querySelector('.parent-cube');
+
+  parentCube.addEventListener('click', () => {
+    parentCube.classList.add('bounce-animation');
+    setTimeout(() => {
+      parentCube.classList.remove('bounce-animation');
+    }, 600);
+  });
+});

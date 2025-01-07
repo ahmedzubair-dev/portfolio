@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>projects</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="projects.css" />
+  </head>
+  <body>
+    <div id="nav">
+      <div class="sidebar">
+        <h4 onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+            >
+              <path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+              /></svg
+          ></a>
+        </h4>
+        <h4><a href="#page2">About Me</a></h4>
+        <h4><a href="projects.html">Projects</a></h4>
+        <h4><a href="#page3">Skilss</a></h4>
+        <h4><a href="#">Blog</a></h4>
+        <h4><a href="contact.html">Contact us</a></h4>
+      </div>
+      <a href="index.html"><img src="images/logo.png" alt="" /></a>
+      <h4 class="hideOnMobile"><a href="#page2">About Me</a></h4>
+      <h4 class="hideOnMobile"><a href="projects.html">Projects</a></h4>
+      <h4 class="hideOnMobile"><a href="#page3">Skills</a></h4>
+      <h4 class="hideOnMobile">Blog</h4>
+      <h4 class="hideOnMobile"><a href="contact.html">Contact us</a></h4>
+      <h4 class="menu-button" onclick="showSidebar()">
+        <a
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="26"
+            viewBox="0 96 960 960"
+            width="26"
+            fill="white"
+          >
+            <path
+              d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+            /></svg
+        ></a>
+      </h4>
+    </div>
+    <div id="projects">
+      <h3>PROJECTS</h3>
+      <div id="cards-container">
+        <div class="card" id="card1">
+          <div class="overlay">
+            <h4>AI-Powered Chatbot: "Jarvis"</h4>
+            <p>
+              Developed an intelligent chatbot named "Jarvis" integrated with a
+              CRM system to streamline customer interactions.
+            </p>
+            <p>
+              Leveraged Natural Language Processing (NLP) techniques to enable
+              "Jarvis" to understand and respond to customer queries
+              effectively.
+            </p>
+            <button>View Live</button>
+          </div>
+        </div>
+        <div class="card" id="card2">
+          <div class="overlay">
+            <h4>Python prog</h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
+              quam molestias magni cupiditate architecto et enim quas facere
+              ipsum tempora?
+            </p>
+            <button>View Live</button>
+          </div>
+        </div>
+        <div class="card" id="card3">
+          <div class="overlay">
+            <h4>Web dev</h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
+              quam molestias magni cupiditate architecto et enim quas facere
+              ipsum tempora?
+            </p>
+            <button>View Live</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

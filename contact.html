@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        background-color: rgb(0, 0, 0);
+      }
+      .uf-contact-form-01 {
+        max-width: 900px;
+      }
+      @media (min-width: 576px) {
+        .uf-contact-form-01 {
+          min-height: 100vh;
+          align-content: center;
+        }
+      }
+      .uf-img-contact-form-01 {
+        max-width: 100%;
+        animation: uf-animation 4s ease-in-out 1s infinite alternate;
+        position: relative;
+      }
+      .uf-ct-01-text-primary {
+        color: #00cebd;
+      }
+      .uf-ct-01-btn-primary {
+        background-color: #00cebd;
+        color: #fff;
+      }
+      .uf-ct-01-btn-primary:hover {
+        background-color: #05867c;
+        color: #fff;
+      }
+
+      @keyframes uf-animation {
+        0% {
+          top: 0px;
+        }
+        50% {
+          top: -30px;
+        }
+        100% {
+          top: 0px;
+        }
+      }
+      .form-control:focus {
+        border-color: #0cd8c7;
+        box-shadow: 0 0 0 0.25rem rgba(18, 224, 197, 0.21);
+      }
+
+      .form-label{
+        color: black;
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+    <div id="nav">
+        <div class="sidebar">
+          <h4 onclick="hideSidebar()">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="26"
+                viewBox="0 96 960 960"
+                width="26"
+              >
+                <path
+                  d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+                /></svg
+            ></a>
+          </h4>
+          <h4><a href="#page2">About Me</a></h4>
+          <h4><a href="projects.html">Projects</a></h4>
+          <h4><a href="#page3">Skilss</a></h4>
+          <h4><a href="#">Blog</a></h4>
+          <h4><a href="contact.html">Contact us</a></h4>
+        </div>
+        <a href="index.html"><img src="images/logo.png" alt="" /></a>
+        <h4 class="hideOnMobile"><a href="#page2">About Me</a></h4>
+        <h4 class="hideOnMobile"><a href="projects.html">Projects</a></h4>
+        <h4 class="hideOnMobile"><a href="#page3">Skills</a></h4>
+        <h4 class="hideOnMobile">Blog</h4>
+        <h4 class="hideOnMobile"><a href="contact.html">Contact us</a></h4>
+        <h4 class="menu-button" onclick="showSidebar()">
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+              fill="white"
+            >
+              <path
+                d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+              /></svg
+          ></a>
+        </h4>
+      </div>
+
+    <section class="uf-contact-form-01 mx-auto">
+      <div class="container">
+        <div
+          class="row justify-content-center bg-white rounded-4 shadow py-5 gx-5 px-lg-5"
+        >
+          <div class="col-md-6 text-center">
+            <h2 class="uf-ct-01-text-primary text-uppercase fw-bold">
+              Contact Me
+            </h2>
+            <p>
+              Or reach out manually to
+              <a
+                href="mailto:uifresh.net@gmail.com"
+                class="text-decoration-none"
+                >zubairahmedadil07@gmail.com</a
+              >
+            </p>
+            <img
+              src="./images/plane2.jpg"
+              alt=""
+              class="uf-img-contact-form-01 pt-4 d-md-block d-none"
+            />
+          </div>
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="uf-imail" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="uf-imail"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text uf-ct-01-text-primary">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="uf-iname" class="form-label">Your name</label>
+                <input type="text" class="form-control" id="uf-iname" />
+              </div>
+              <div class="mb-3">
+                <label for="uf-itextarea" class="form-label"
+                  >Your message</label
+                >
+                <textarea
+                  class="form-control"
+                  id="uf-itextarea"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-lg uf-ct-01-btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

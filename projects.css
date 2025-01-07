@@ -1,0 +1,84 @@
+/* project div start here*/
+body {
+  background-color: #000;
+}
+#projects {
+  padding-top: 140px;
+  height: 100vh;
+  width: 100vw;
+}
+#projects h3 {
+  font-size: 40px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cards-container {
+  /* background-color: red; */
+  margin-top: 60px;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  position: relative;
+  z-index: 10;
+}
+.card {
+  height: 80%;
+  width: 24%;
+  /* background-color: blue; */
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: all ease 0.6s;
+}
+#card1 {
+  background-image: url(images/jarvis.jpg);
+}
+#card2 {
+  background-image: url(https://img.freepik.com/premium-photo/programing-python_1292885-18831.jpg?ga=GA1.1.2097725186.1727254336&semt=ais_hybrid);
+}
+#card3 {
+  background-image: url(https://img.freepik.com/premium-vector/program-coding-flat-design-style-vector-concept-illustration_92926-1857.jpg?ga=GA1.1.2097725186.1727254336&semt=ais_hybrid);
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #00cebd;
+  padding: 0px;
+  padding-top: 80px;
+  opacity: 0;
+  transition: all ease 0.6s;
+}
+.overlay h4 {
+  color: #000;
+  font-size: 22px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 60px;
+  /* padding-left : 8%; */
+  text-align: center;
+  font-weight: 800;
+}
+.overlay p {
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* line-height-step: 10px; */
+  margin-bottom: 10px;
+  padding: 2%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.card:hover .overlay {
+  opacity: 1;
+}
+.card:hover {
+  transform: rotate3d(-1, 1, 0, 10deg);
+}
+/* project div ends here*/
