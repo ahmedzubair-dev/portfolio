@@ -1063,6 +1063,11 @@ body {
     margin-bottom: 0px;
     line-height: 12px;
   }
+
+  .row{
+    height: 80vh;
+    width: 80vw;
+  }
 }
 @media (max-width: 800px) and (min-width: 641px) {
   .cube {
