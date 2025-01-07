@@ -146,7 +146,8 @@ body {
   /* Optional: Ensure navbar visibility */
 }
 #nav img {
-  height: 3.5vw;
+  height: 2.5vw;
+  width: auto;
 }
 #nav h4 {
   text-transform: uppercase;
