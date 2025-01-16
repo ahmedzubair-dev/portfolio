@@ -606,8 +606,8 @@ body {
 }
 
 #about-us img:hover{
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 
 #about-us img {
@@ -619,7 +619,7 @@ body {
   transition-duration: 1.5s;
   transition-timing-function: ease-out;
   transition-delay: 0.0s;
-  /* transition: width 1.5s ease-in 0.1s; all four in one */
+  /* transition: height 1.5s ease-in 0.5s; */
  
 }
 #about-us-in {
@@ -630,17 +630,74 @@ body {
   align-items: center;
   flex-direction: column;
 }
-#about-us-in h3 {
+/* #about-us-in h3 {
   font-size: 54px;
   font-weight: 800;
   padding-bottom: 65px;
   display: block;
-}
+} */
 #about-us-in p {
   font-size: 20px;
   padding-bottom: 30px;
   line-height: 36px;
 }
+
+
+#abt-me{
+  margin-bottom: 20px;
+  height: 30px;
+  font-size: 54px;
+  font-weight: 800;
+  padding-bottom: 65px;
+  display: block;
+  animation: about-me 5s ease-in-out 1s infinite normal;
+
+}
+
+@keyframes about-me {
+  from{
+    font-size: 54px;
+  }
+  
+  to{
+    font-size: 65px;
+  }
+}
+
+
+#about-us-in {
+  animation: fadeInOut 0s ease-in-out infinite; 
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1; /* Fully visible */
+  }
+  83.33% { /* Visible for 5 seconds (5/6 * 100%) */
+    opacity: 1;
+  }
+  100% { /* Fades out for 1 second */
+    opacity: 0;
+  }
+}
+
+#about-us-in p {
+  animation: fadeEach 6s ease-in-out infinite;
+}
+
+@keyframes fadeEach {
+  0% {
+    opacity: 1; /* Fully visible */
+  }
+  83.33% { /* Visible for 5 seconds (5/6 * 100%) */
+    opacity: 1;
+  }
+  100% { /* Fades out for 1 second */
+    opacity: 0;
+  }
+}
+
+
 /* page div ends here*/
 /* page3 div start here*/
 #page3 {
