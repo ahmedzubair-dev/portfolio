@@ -189,3 +189,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 600);
   });
 });
+
+
+// Get all elements with the class "eleme"
+const elements = document.querySelectorAll(".eleme");
+
+// Add event listeners for hover
+elements.forEach((elem) => {
+  elem.addEventListener("mouseover", function () {
+    const imageUrl = this.getAttribute("data-image"); // Get image URL
+    const fixedImage = document.getElementById("fixed-image");
+
+    // Set the background image and show the fixed image
+    fixedImage.style.backgroundImage = `url(${imageUrl})`;
+    fixedImage.style.display = "block";
+  });
+
+  elem.addEventListener("mouseout", function () {
+    const fixedImage = document.getElementById("fixed-image");
+
+    // Hide the fixed image
+    fixedImage.style.display = "none";
+  });
+});

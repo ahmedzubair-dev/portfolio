@@ -700,7 +700,7 @@ body {
 
 /* page div ends here*/
 /* page3 div start here*/
-#page3 {
+/* #page3 {
   height: 100vh;
   width: 100%;
   background-color: #000;
@@ -727,7 +727,73 @@ body {
 #page3 #colon2 {
   bottom: 30%;
   right: 15%;
+} */
+
+#page3 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #080808;
+  padding: 4vw 0;
 }
+
+.skills{
+  font-size: 80px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.eleme {
+  height: 130px;
+  width: 100%;
+  position: relative;
+
+  border-bottom: 1px solid #38383864;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0 2vw;
+}
+
+.eleme h2 {
+  font-size: 3vw;
+  position: relative;
+  z-index: 9;
+}
+
+.eleme .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #00cebd;
+  position: absolute;
+  left: 0;
+  top: -100%;
+  transition: all ease 0.25s;
+}
+
+.eleme:hover .overlay {
+  top: 0;
+}
+
+
+
+#fixed-image {
+  height: 30vw;
+  width: 24vw;
+  background-color: red;
+  border-radius: 15px;
+  position: fixed;
+  z-index: 99;
+  left: 50%;
+  top: 25%;
+  display: none;
+  background-size: cover;
+  background-position: center;
+}
+
+
 /* page3 div ends here*/
 /* page3 div start here*/
 #page4 {
