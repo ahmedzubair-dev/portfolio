@@ -133,7 +133,7 @@ body {
 /* old loader*/
 /* Nav bar CSS */
 #nav {
-  height: 125px;
+  height: 90px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -743,6 +743,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  color: #00cebd;
 }
 
 .eleme {
@@ -782,7 +783,7 @@ body {
 #fixed-image {
   height: 30vw;
   width: 24vw;
-  background-color: red;
+  /* background-color: red; */
   border-radius: 15px;
   position: fixed;
   z-index: 99;
@@ -795,8 +796,8 @@ body {
 
 
 /* page3 div ends here*/
-/* page3 div start here*/
-#page4 {
+/* page4 div start here*/
+/* #page4 {
   height: 30vh;
   width: 100%;
   display: flex;
@@ -851,8 +852,8 @@ body {
   font-family: gilroy;
   background-color: #000;
   -webkit-text-stroke: 2px #fff;
-}
-/* page3 div ends here*/
+} */
+/* page4 div ends here*/
 @media screen and (max-width: 520px) {
   .screen-body {
     flex-direction: column;
