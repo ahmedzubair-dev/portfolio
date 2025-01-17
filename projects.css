@@ -39,7 +39,7 @@ body {
   background-image: url(images/jarvis.jpg);
 }
 #card2 {
-  background-image: url(https://img.freepik.com/premium-photo/programing-python_1292885-18831.jpg?ga=GA1.1.2097725186.1727254336&semt=ais_hybrid);
+  background-image: url(https://img.freepik.com/premium-vector/ai-technology-smart-chat-bot_441769-2.jpg?ga=GA1.1.2097725186.1727254336&semt=ais_incoming);
 }
 #card3 {
   background-image: url(https://img.freepik.com/premium-vector/program-coding-flat-design-style-vector-concept-illustration_92926-1857.jpg?ga=GA1.1.2097725186.1727254336&semt=ais_hybrid);
@@ -49,9 +49,13 @@ body {
   width: 100%;
   background-color: #00cebd;
   padding: 0px;
-  padding-top: 80px;
+  /* padding-top: 20px; */
   opacity: 0;
   transition: all ease 0.6s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .overlay h4 {
   color: #000;
@@ -81,4 +85,13 @@ body {
 .card:hover {
   transform: rotate3d(-1, 1, 0, 10deg);
 }
+
+button{
+ background-color: rgb(0, 0, 0);
+ cursor: pointer;
+ height: 30px;
+ width: 120px;
+ border-radius: 10px;
+}
+
 /* project div ends here*/
